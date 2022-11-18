@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch!</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1> Etch a sketch! </h1>
+    <section>
+        <div class="options">
+            <div class = "color-picker">
+                <label for="color-picker"></label>
+                <input type="color"  id="color-picker"  value = "#808080" focus>
+            </div>
+            <div class = "color-mode">
+                <input type="button" name = "mode" value="Color Mode" class = "style-option"id = "color-mode">
+            </div> 
+            <div class = "rainbow-mode">
+                <input type="button" name = "mode" value="Rainbow Mode" class = "style-option" id = "rainbow-mode">
+            </div>
+            <div class = "Clear">
+                <input type="button" name = "mode" value="Clear" id = "clear">
+            </div>
+            <div class = "Eraser">
+                <input type="button" name = "mode" class = "style-option" value="Eraser" id = "eraser">
+            </div>
+            <div class = "squarenum">
+                <p></p>
+                <input type="range" min = 0 max = 64 id = "grid-range" value = 16 name = "mode">
+            </div>
+        </div> 
+        <div class="container"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
